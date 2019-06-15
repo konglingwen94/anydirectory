@@ -2,11 +2,12 @@
   "name": "anydirectory",
   "version": "1.1.0",
   "description": "anydirectory",
+  "keyword":"static,server",
   "main": "./src/app.js",
   "bin": {
     "anydirectory": "bin/anydirectory"
   },
-  "respository": "",
+  "respository": "git@github.com:konglingwen94/anydirectory.git",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack-dev-server --progress"
