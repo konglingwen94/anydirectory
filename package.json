@@ -1,12 +1,12 @@
 {
   "name": "anydirectory",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "anydirectory",
   "main": "./src/app.js",
   "bin": {
     "anydirectory": "bin/anydirectory"
   },
-  "respository":"",
+  "respository": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack-dev-server --progress"
