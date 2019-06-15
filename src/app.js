@@ -5,6 +5,8 @@ const config = require('./config')
 const route = require('./route')
 const open = require('./openUrl')
 
+
+
 class Server {
   constructor(conf) {
     this.config = Object.assign({}, config, conf)
@@ -21,7 +23,10 @@ class Server {
     server.listen(this.config.port, this.config.host, () => {
       const url = `http://${this.config.host}:${this.config.port}`
       console.log('server is running at ' + chalk.green(url))
-      open(url)
+      if(process.argv.includes('-o')){
+        // console.log(process.argv,process.execArgv)
+        open(url)
+      }
     })
   }
 }

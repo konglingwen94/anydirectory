@@ -23,11 +23,6 @@ const argv = yargs
     describe: 'root path',
     default: process.cwd(),
   })
-  .option('o', {
-    alias: 'open',
-    describe: 'open url',
-    default: false,
-  })
   .version()
   .alias('v', 'version')
   .help().argv
