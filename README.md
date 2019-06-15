@@ -9,7 +9,7 @@ npm install anydirectory -g
 
 ```
 
-## provide api
+## provide command arguments
 
 anydirectory # Use the current folder as the static resource server root directory
 
