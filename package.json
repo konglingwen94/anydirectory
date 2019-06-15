@@ -1,6 +1,6 @@
 {
   "name": "anydirectory",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "anydirectory",
   "main": "./src/app.js",
   "bin": {
