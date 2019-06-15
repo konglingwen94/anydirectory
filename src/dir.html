@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="icon" href="data:image/ico;base64,aWNv" />
+    <title>{{ title }}</title>
+    <style>
+      body {
+        padding: 20px;
+      }
+      a {
+        display: block;
+        font-size: 20px;
+      }
+      .mime {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    {{#each files}}
+    <a href="{{../dir}}/{{ file }}"
+      >{{#if isFile}}<span class="mime">【{{ mime }}】</span>{{/if}}
+      {{ file }}</a
+    >
+    {{/each}}
+  </body>
+</html>
