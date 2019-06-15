@@ -28,7 +28,7 @@ module.exports = async (req, res, filePath, config) => {
 
       const dirPath = path.relative(config.root, filePath)
 
-      console.log(__dirname,config.root, filePath)
+      // console.log(__dirname,config.root, filePath)
       const data = {
         title: path.basename(filePath),
         files: files.map(file => {
@@ -72,7 +72,7 @@ module.exports = async (req, res, filePath, config) => {
         res.statusCode = 200
         readStream = fs.createReadStream(filePath)
       }
-      console.log(filePath.match)
+      // console.log(filePath.match)
       if (filePath.match(config.compress)) {
         readStream = compress(readStream, req, res)
       }
