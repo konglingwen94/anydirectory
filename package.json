@@ -1,6 +1,6 @@
 {
   "name": "anydirectory",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "anydirectory",
   "keyword": "static,server",
   "main": "./src/app.js",
