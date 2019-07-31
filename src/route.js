@@ -20,6 +20,12 @@ module.exports = async (req, res, filePath, config) => {
   try {
     const result = await stat(filePath)
 
+if(req.url==='/'){
+res.writeHead(302,{Location:'/index.html'})
+	res.end()
+	return
+}
+
     if (result.isDirectory()) {
       res.statusCode = 200
       res.setHeader('Content-Type', 'text/html')
