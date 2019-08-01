@@ -28,7 +28,7 @@ module.exports = (stat, req, res) => {
   if (!lastModified && !etag) {
     return false
   }
-  console.log(lastModified, res.getHeader('Last-Modified'))
+//  console.log(lastModified, res.getHeader('Last-Modified'))
   if (lastModified && lastModified !== res.getHeader('Last-Modified')) {
     return false
   }
